@@ -15,6 +15,6 @@ while True:
         print("You picked correct!")
         
     else:
-        print("You chose wrong. Try again. Test")
+        print("You chose wrong. Try again.")
 
 
