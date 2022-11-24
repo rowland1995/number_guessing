@@ -1,7 +1,7 @@
 import random
 
 score = 0
-while True:
+while score < 5: #program ends when user score reaches 5
     
     computer_number = random.randint(1,5) #variable for random number
     user_number = input("Guess the computers number between 1-5: ") #takes users guess
@@ -16,7 +16,7 @@ while True:
     if int(user_number) == computer_number:
         print("You picked correct!")
         score = score + 1
-        print(score)
+        print("Your score = " + (str(score)))
     else:
         print("You chose wrong. Try again.")
 
