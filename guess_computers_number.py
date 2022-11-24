@@ -7,8 +7,7 @@ while score < 5: #program ends when user score reaches 5
     user_number = input("Guess the computers number between 1-5: ") #takes users guess
     print("The computer picked : " + str(computer_number))
     
-    if score == 5:
-        print("YOU WIN")
+    
     if int(user_number) > 5:
         print("Your guess is too high")
         
@@ -18,6 +17,8 @@ while score < 5: #program ends when user score reaches 5
     if int(user_number) == computer_number:
         print("You picked correct!")
         score = score + 1
+        if score == 5:
+            print("YOU WIN")
         print("Your score = " + (str(score)))
     else:
         print("You chose wrong. Try again.")
