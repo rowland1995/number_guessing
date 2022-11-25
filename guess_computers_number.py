@@ -11,10 +11,10 @@ while score < 5: #program ends when user score reaches 5
     if int(user_number) > 5:
         print("Your guess is too high")
         
-    if int(user_number) < 0:
+    elif int(user_number) < 0:
         print("Your guess is too low")
 
-    if int(user_number) == computer_number:
+    elif int(user_number) == computer_number:
         print("You picked correct!")
         score = score + 1
         if score == 5:
